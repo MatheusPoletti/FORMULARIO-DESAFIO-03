@@ -1,0 +1,233 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: "Poppins", sans-serif;
+}
+
+
+body::before {
+  content: '';
+  z-index: -1;
+
+  position: absolute;
+  width: 100%;
+  height: 436px;
+  background-color: #535971;
+}
+
+body {
+  background-color: #EFEFEF;
+}
+
+header {
+  width: 750px;
+  margin: auto;
+
+  padding-top: 140px;
+  padding-bottom: 58px;
+
+}
+
+
+header h1 {
+  font-family: "Staatliches", sans-serif;
+  font-size: 48px;
+  line-height: 60px;
+  font-weight: normal;
+  color: white;
+}
+
+p {
+  color: #FFFFFF;
+  font-size: 20px;
+
+
+}
+
+
+form {
+  border-radius: 8px 8px 0px 0px;
+  display: flex;
+  flex-direction: column;
+
+  width: 750px;
+  margin: auto;
+
+  padding: 64px;
+  background-color: #FFFFFF;
+}
+
+fieldset {
+
+  border: none;
+}
+
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+
+}
+
+
+.input-wrapper label {
+  font-size: 14px;
+  line-height: 24px;
+  color: #4E4958;
+
+}
+
+.input-wrapper label span {
+  color: #C1BCCC;
+
+}
+
+input:invalid {
+  /*se for invalido, vai aparecer a borda vermelha*/
+  border: 2px solid #ff0110;
+}
+
+.input-wrapper input {
+  background-color: #FAFAFC;
+
+  height: 56px;
+
+  border: 1px solid #E6E6F0;
+  border-radius: 8px;
+
+  margin-top: 8px;
+  margin-bottom: 16px;
+}
+
+
+
+legend {
+  font-family: "Staatliches", sans-serif;
+  line-height: 34px;
+  font-size: 24px;
+
+
+
+  color: #535971;
+  border-bottom: 1px solid #E6E6F0;
+  width: 100%;
+  padding-bottom: 16px;
+
+
+}
+
+form fieldset .colun-2 {
+  display: flex;
+  gap: 22px;
+
+}
+
+.colun-2>div:nth-child(1) {
+  /*Serve pra acessar a primeira div da coluna que eu criei*/
+  width: 50%;
+}
+
+.colun-2>div:nth-child(2) {
+  width: 50%;
+}
+
+.colun-3 {
+  display: flex;
+  gap: 32px;
+}
+
+.colun-3>div {
+  display: flex;
+  width: 50%;
+}
+
+.colun-32>div {
+  width: 50%;
+
+
+}
+
+.colun-32 {
+  gap: 10px;
+}
+
+
+
+
+.colun-41 {
+  display: flex;
+  gap: 32px;
+}
+
+.colun-41>div {
+  display: flex;
+  width: 50%;
+}
+
+.colun-42>div {
+  width: 50%;
+
+
+}
+
+.colun-42 {
+  gap: 10px;
+}
+
+footer {
+  background-color: #535971;
+  width: 750px;
+  margin: 0 auto;
+  height: 160px;
+
+  border-radius: 0 0 8px 8px;
+
+}
+
+
+footer button {
+  font-family: "Staatliches", sans-serif;
+  font-size: 20px;
+  color: #FFFFFF;
+
+  background-color: #FF5374;
+
+  width: 608px;
+  height: 55px;
+
+  border: none;
+  border-radius: 20px;
+
+  margin: 52px 72px;
+
+}
+
+footer button:hover {
+  background-color: #f8345b;
+}
+
+
+form>fieldset:nth-child(2) legend {
+  margin-bottom: 32px;
+}
+
+
+form>fieldset legend {
+  margin-bottom: 32px;
+}
+
+form fieldset .line2, .line1 {
+  border: none;
+  margin-bottom: 8px;
+  font-size: 20px;
+  line-height: 34px;
+
+  display: flex;
+  position: relative;
+  margin-bottom: -12px;
+}
+
+.input-wrapper input:invalid{
+  border: 1px solid #FF5374;
+}
